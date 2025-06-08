@@ -7,11 +7,9 @@ export default function Layout() {
   return (
     <div>
       <AppBar />
-      <main style={{ padding: "20px" }}>
         <Suspense fallback={<p>Loading page...</p>}>
           <Outlet />
         </Suspense>
-      </main>
     </div>
   );
 }

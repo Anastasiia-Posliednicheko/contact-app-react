@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage  } from "formik";
 import * as Yup from "yup";
 import {register} from "../../redux/auth/operations";
-import css from "../RegistrationForm/RegistrationForm.module.css";
+
 
 
 const validationSchema = Yup.object({

@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import {register} from "../../redux/auth/operations";
 import css from "../RegistrationForm/RegistrationForm.module.css";
 
+
 const validationSchema = Yup.object({
   name: Yup.string().min(2, "Too short").max(50, "Too Long").required("Required"),
   email: Yup.string().email("Invalid email").max (49, "Too Long").required("Required"),

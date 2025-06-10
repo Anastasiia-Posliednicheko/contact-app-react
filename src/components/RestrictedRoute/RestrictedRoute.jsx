@@ -10,5 +10,3 @@ const RestrictedRoute = ({ redirectTo = "/", component }) => {
 };
 
 export default RestrictedRoute;
-
-

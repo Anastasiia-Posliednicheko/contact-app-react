@@ -9,7 +9,7 @@
   color: #5c432c;
 }
 
-.active {
+link.active {
   text-decoration: underline;
   color: #a57149;
 }

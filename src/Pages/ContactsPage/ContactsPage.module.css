@@ -1,13 +1,101 @@
 .container {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: #F5F2EA;
 }
 
 .box {
-    flex: 1;
+  flex: 1;
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 8px;
 }
-.subtitle {
-    margin-top: 32px;
+
+.title,
+h2 {
+  color: #A67B5B;
+  margin: 0 0 12px;
+}
+
+.subtitle,
+h3 {
+  margin: 20px 0 0;
+  color: #A67B5B;
+}
+
+button {
+  background-color: #A67B5B;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+.ContactList {
+  margin-top: 16px;
+}
+
+.ContactItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #E0DDD8;
+}
+
+.ContactItem:hover {
+  background-color: #F0ECE6;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .box {
+    padding: 24px;
+  }
+
+  .title,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle,
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .box {
+    padding: 40px;
+  }
+
+  .title,
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .subtitle,
+  h3 {
+    font-size: 1.25rem;
+  }
 }

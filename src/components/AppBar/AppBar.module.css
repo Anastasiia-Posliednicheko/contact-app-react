@@ -1,0 +1,20 @@
+.appBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #fffdf9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .appBar {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .appBar {
+    padding: 32px;
+  }
+}

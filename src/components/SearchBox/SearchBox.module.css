@@ -1,17 +1,17 @@
 .wrapper {
-  width: 100%;
-  max-width: 400px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 100%;
+  margin: 20px auto 0;
+  padding: 16px;
+  background-color: #fffaf0;
   border: 2px solid #e6d4b6;
   border-radius: 12px;
-  background-color: #fffaf0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .label {
-  display: block;
-  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   color: #4e3d2c;
@@ -31,4 +31,42 @@
 .input:focus {
   border-color: #a88e76;
   box-shadow: 0 0 4px rgba(168, 142, 118, 0.3);
+}
+
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 600px;
+    padding: 24px;
+    margin: 24px auto 0;
+    gap: 10px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .input {
+    font-size: 18px;
+    padding: 12px 14px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 700px;
+    padding: 32px;
+    margin: 32px auto 0;
+    gap: 12px;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .input {
+    font-size: 20px;
+    padding: 14px 16px;
+  }
 }

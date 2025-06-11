@@ -1,14 +1,16 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import AppBar from "../AppBar/AppBar";
-
+import css from "../Layout/Layout.module.css";
 
 export default function Layout() {
   return (
-    <div>
+    <div className={css.layout}>
       <AppBar />
         <Suspense fallback={<p>Loading page...</p>}>
-          <Outlet />
+          <div className={css.content}>
+            <Outlet />
+          </div>
         </Suspense>
     </div>
   );

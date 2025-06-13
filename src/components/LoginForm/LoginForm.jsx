@@ -31,12 +31,12 @@ export default function LoginForm() {
       <Form className={css.form}>
         <label>
           Email
-          <Field name="email" type="email" />
+          <Field name="email" type="email" placeholder="Your email"/>
           <ErrorMessage name="email" component="div" />
         </label>
         <label>
           Password
-          <Field name="password" type="password" />
+          <Field name="password" type="password"  placeholder="Your password"/>
           <ErrorMessage name="password" component="div" />
         </label>
         <button type="submit" className={css.button}>Login</button>

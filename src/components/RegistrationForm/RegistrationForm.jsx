@@ -43,15 +43,15 @@ export default function RegistrationForm (){
            <Form className={css.form }>
                <label>
                   Name 
-                 <Field name="name" type="text"/>
+                 <Field name="name" type="text" placeholder="Your full name"/>
                </label>
                <label>
                  Email 
-                 <Field name="email" type="email"/>
+                 <Field name="email" type="email" placeholder="Your email"/>
                </label>
                <label>
                  Password
-                 <Field name="password" type="password"/>
+                 <Field name="password" type="password" placeholder="Min 8 characters" />
                </label>
                 <button type="submit" className={css.button}>
                  Register

@@ -20,7 +20,8 @@ export default function SearchBox(){
              type="text"
              value={filter}
              onChange={handleChange}
-             className={css.input} />
+             className={css.input}
+             placeholder="Find contacts by name…" />
       </div>
    );
   }

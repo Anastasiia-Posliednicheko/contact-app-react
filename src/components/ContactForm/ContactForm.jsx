@@ -26,12 +26,12 @@ export default function ContactForm (){
          <Form className={css.container}>
           <div >
            <label htmlFor="name">Name</label>
-           <Field name="name" type="text"/>
+           <Field name="name" type="text" placeholder="Enter contact name"/>
            <ErrorMessage name="name"component="div" className={css.error} /> 
           </div>
           <div>
            <label htmlFor="number">Number</label>
-           <Field name="number" type="text"/>
+           <Field name="number" type="text" placeholder="Enter phone number"/>
            <ErrorMessage name="number" component="div" className={css.error} />
           </div>
           <button type="submit">Add Contact</button>

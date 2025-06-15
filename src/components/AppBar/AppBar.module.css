@@ -18,3 +18,31 @@
     padding: 32px;
   }
 }
+
+
+
+:global(body.dark) .appBar {
+  background-color: #1f2a44;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+:global(body.dark) .appBar :global(.link) {
+  color: #e0e0e0;
+}
+
+:global(body.dark) .appBar :global(.link):hover {
+  color: #82aaff;
+}
+
+:global(body.dark) .appBar :global(.link.active) {
+  border-bottom-color: #82aaff;
+}
+
+:global(body.dark) .appBar :global(button) {
+  background-color: #82aaff;
+  color: #0d1e30;
+}
+
+:global(body.dark) .appBar :global(button):hover {
+  opacity: 0.9;
+}

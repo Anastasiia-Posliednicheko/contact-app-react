@@ -31,7 +31,6 @@ button {
   border: none;
   padding: 6px 12px;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 button:hover {
@@ -98,4 +97,22 @@ button:hover {
   h3 {
     font-size: 1.25rem;
   }
+}
+
+:global(body.dark) .container {
+  background-color: #1f2a44;
+}
+
+:global(body.dark) .box {
+  background-color: #2a2a2a;
+}
+
+:global(body.dark) .title,
+:global(body.dark) h2 {
+  color: #e0e0e0;
+}
+
+:global(body.dark) .subtitle,
+:global(body.dark) h3 {
+  color: #c9d1d9;
 }

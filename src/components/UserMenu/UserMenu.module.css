@@ -21,6 +21,9 @@
 .button:hover {
   background-color: #8b5e3c;
 }
+.username {
+  margin-left: 10px;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -45,3 +48,18 @@
     font-size: 18px;
   }
 }
+
+:global(body.dark) .container {
+  color: #e0e0e0;
+}
+:global(body.dark) .username {
+  color: #82aaff;
+}
+:global(body.dark) .button {
+  background-color: #82aaff;
+  color: #0d1e30;
+}
+:global(body.dark) .button:hover {
+  opacity: 0.9;
+}
+

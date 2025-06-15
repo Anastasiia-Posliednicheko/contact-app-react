@@ -8,21 +8,6 @@
   width: 100%;
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  background-color: #fdf6ec;
-  border: 2px dashed #d6c4aa;
-  border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-}
-
-.item:hover {
-  transform: scale(1.01);
-}
 
 
 @media (min-width: 768px) {
@@ -43,4 +28,28 @@
   .item {
     width: 200px;
   }
+}
+
+:global(body.dark) .item {
+  background-color: #1f2a44;
+  border-color: #30456a;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+:global(body.dark) .item:hover,
+:global(body.dark) .item:focus-within {
+  border-color: #82aaff;
+  box-shadow: 0 0 0 2px #82aaff;
+}
+:global(body.dark) .name {
+  color: #e0e0e0;
+}
+:global(body.dark) .number {
+  color: #c9d1d9;
+}
+:global(body.dark) .button {
+  background-color: #82aaff;
+  color: #0d1e30;
+}
+:global(body.dark) .button:hover {
+  opacity: 0.9;
 }

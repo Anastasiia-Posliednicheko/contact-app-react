@@ -2,6 +2,7 @@ import { useEffect, lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { refreshUser } from "../../redux/auth/operations";
+import { Toaster } from "react-hot-toast";
 
 import css from "../App/App.module.css";
 import Layout from "../Layout/Layout";
@@ -32,6 +33,8 @@ export default function App() {
   return isRefreshing ? (
     <p className={css.text}>Refreshing user...</p>
   ) : (
+    <>
+    <Toaster position="top-right" />
     <Suspense fallback={<p className={css.text}>Loading page...</p>}>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -67,5 +70,6 @@ export default function App() {
         </Route>
       </Routes>
     </Suspense>
+    </>
   );
 }

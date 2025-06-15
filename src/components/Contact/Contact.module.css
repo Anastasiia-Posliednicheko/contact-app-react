@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 12px;
+  gap: 10px;
   background-color: #fdf6ec;
   border: 2px dashed #d6c4aa;
   border-radius: 12px;
@@ -23,6 +24,14 @@
 .item:hover {
   transform: scale(1.01);
 }
+.input {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #bfae9f;
+  border-radius: 6px;
+  background-color: #fffdf9;
+}
+
 
 .name {
   font-weight: bold;
@@ -43,7 +52,6 @@
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   font-size: 14px;
   align-self: flex-start;
   transition: background-color 0.3s;
@@ -52,7 +60,11 @@
 .button:hover {
   background-color: #8b5e3c;
 }
-
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
 
 @media (min-width: 768px) {
   .list {
@@ -104,4 +116,33 @@
     padding: 12px 20px;
     font-size: 18px;
   }
+}
+ 
+:global(body.dark) .item {
+  background-color: #1f2a44;
+  border-color: #30456a;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+:global(body.dark) .item:hover,
+:global(body.dark) .item:focus-within {
+  border-color: #82aaff;
+  box-shadow: 0 0 0 2px #82aaff;
+}
+:global(body.dark) .name {
+  color: #e0e0e0;
+}
+:global(body.dark) .number {
+  color: #c9d1d9;
+}
+:global(body.dark) .button {
+  background-color: #82aaff;
+  color: #0d1e30;
+}
+:global(body.dark) .button:hover {
+  opacity: 0.9;
+}
+:global(body.dark) .input {
+  background-color: #2b3a5c;
+  color: #e0e0e0;
+  border-color: #30456a;
 }

@@ -9,7 +9,7 @@ import css from "../RegistrationForm/RegistrationForm.module.css";
 
 const validationSchema = Yup.object({
   name: Yup.string().min(2, "Too short").max(50, "Too Long").required("Required"),
-  email: Yup.string().email("Invalid email").max (49, "Too Long").required("Required"),
+  email: Yup.string().email("Invalid email").max (50, "Too Long").required("Required"),
   password: Yup.string().min(8, "Minimum 8 characters").max(50, "Too Long").required("Required"),
 });
 
@@ -30,10 +30,6 @@ export default function RegistrationForm (){
 
     resetForm();
   };
-
-
-  
-
     return ( 
         <Formik
           initialValues={initialValues}

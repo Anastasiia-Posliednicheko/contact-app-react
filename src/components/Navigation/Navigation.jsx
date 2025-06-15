@@ -13,8 +13,7 @@ export default function Navigation() {
             <NavLink to="/" className={css.link}>
               Home
             </NavLink>
-
-            {isLoggedIn && (
+                {isLoggedIn && (
                 <NavLink  to="/contacts" className={css.link}>
                     Contacts
                 </NavLink>
